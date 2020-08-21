@@ -10,7 +10,7 @@ website: spicyjo.github.io
 
 # Social links
 # twitter_username: facespics
-# github_username:  sproogen
+github_username:  SPICYJO
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
@@ -24,7 +24,7 @@ youtube_username: channel/UCsfJIT6fbpew1fiwiKiZnsA
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+  Hi, I am 
 
   I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
 
@@ -41,6 +41,15 @@ about_content: | # this will include new lines to allow paragraphs
 # more_title: A Little More About Me
 more_content: | # this will include new lines to allow paragraphs
   Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+   - Rock climbing
+   - Gaming
+   - Knitting
+   - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+
+# mmmMore Section
+# mmmmore_title: A Little More About Me
+mmmmore_content: | # this will include new lines to allow paragraphs
+  dsdAlongside my interests in networks and software engineering some of my other interests and hobbies are:
    - Rock climbing
    - Gaming
    - Knitting
