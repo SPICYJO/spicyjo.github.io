@@ -1,5 +1,5 @@
 # Site
-repository: SPICYJO/modern-resume-theme
+repository: SPICYJO/spicyjo.github.io
 favicon: images/favicon.ico
 
 # Personal info
@@ -57,7 +57,7 @@ skill_content: | # this will include new lines to allow paragraphs
 footer_show_references: true
 
 # Build settings
-remote_theme: sproogen/resume-theme
+remote_theme: SPICYJO/modern-resume-theme
 
 sass:
   sass_dir: _sass
