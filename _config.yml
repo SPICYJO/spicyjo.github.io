@@ -24,9 +24,13 @@ youtube_username: channel/UCsfJIT6fbpew1fiwiKiZnsA
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I am 
+  Hi, I am Seungwoo Jo and about to graduate from Seoul National University, South Korea in February 2021. I currently major in computer science and mechanical engineering. I want to pursue my career in computer science.
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  My current interests are:
+  - Human Behavior and Context Sensing
+  - Application of Research in Business
+
+# I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
 
 # Projects Section
 # projects_title: Projects
