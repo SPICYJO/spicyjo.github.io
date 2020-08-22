@@ -37,6 +37,14 @@ about_content: | # this will include new lines to allow paragraphs
 # Education Section
 # educaton_title: Education
 
+# Skills Section
+# skill_title: Skills
+skill_content: | # this will include new lines to allow paragraphs
+  dsdAlongg
+   - Knitting
+   - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+
+
 # More Section
 # more_title: A Little Morevvvv About Me
 more_content: | # this will include new lines to allow paragraphs
@@ -46,12 +54,6 @@ more_content: | # this will include new lines to allow paragraphs
    - Knitting
    - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
-# mmmMore Section
-# mmmmore_title: A Little More About Me
-skill_content: | # this will include new lines to allow paragraphs
-  dsdAlongg
-   - Knitting
-   - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
 # Footer
 footer_show_references: true
