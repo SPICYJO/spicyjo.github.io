@@ -28,7 +28,7 @@ about_content: | # this will include new lines to allow paragraphs
 
   My current interests are:
   - Human Behavior and Context Sensing
-  - Application of Research in Business
+  - Application of Technology in Business
 
 # I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
 
@@ -49,7 +49,7 @@ skill_content: | # this will include new lines to allow paragraphs
   - JAVA
   - Python
 
-  <small>Above languages are my most experienced ones. I have some experience in other languages: C++, Matlab, JavaScript, etc. I like learning new languages such as OCaml. I am currently starting on learning Rust.</small>
+  <small>Above languages are my most experienced ones. I have some experience in other languages: C++, Matlab, JavaScript, etc. I like learning new languages such as OCaml. I recently started on learning Rust.</small>
 
   <h5>Tools</h5>
   - LaTeX
