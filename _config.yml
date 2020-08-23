@@ -44,16 +44,17 @@ about_content: | # this will include new lines to allow paragraphs
 # Skills Section
 # skill_title: Skills
 skill_content: | # this will include new lines to allow paragraphs
-  Programming Languages
+  ####Programming Languages
   - C
   - JAVA
   - Python
+  
   <small>Above languages are my most experienced ones. I like learning new languages such as OCaml. I am currently starting on learning Rust.</small>
 
-  Tools
+  ####Tools
   - LaTeX
 
-  Languages
+  ####Languages
    - Korean (Native)
    - English (Fluent)
    - Japanese (Intermediate)
