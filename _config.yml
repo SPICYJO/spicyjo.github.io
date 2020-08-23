@@ -44,19 +44,28 @@ about_content: | # this will include new lines to allow paragraphs
 # Skills Section
 # skill_title: Skills
 skill_content: | # this will include new lines to allow paragraphs
-  dsdAlongg
-   - Knitting
-   - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+  Programming Languages
+  - C
+  - JAVA
+  - Python
+  <small>Above languages are my most experienced ones. I like learning new languages such as OCaml. I am currently starting on learning Rust.</small>
 
+  Tools
+  - LaTeX
+
+  Languages
+   - Korean (Native)
+   - English (Fluent)
+   - Japanese (Intermediate)
 
 # More Section
-# more_title: A Little Morevvvv About Me
-more_content: | # this will include new lines to allow paragraphs
-  Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-   - Rock climbing
-   - Gaming
-   - Knitting
-   - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+# more_title: A Little More About Me
+# more_content: | # this will include new lines to allow paragraphs
+#   Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+#    - Rock climbing
+#    - Gaming
+#    - Knitting
+#    - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
 
 # Footer
