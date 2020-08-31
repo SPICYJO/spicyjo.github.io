@@ -1,19 +1,19 @@
 - layout: left
-  company: ETRI(Electronics and Telecommunications Research Institute, 한국전자통신연구원)
+  company: Electronics and Telecommunications Research Institute
   link: www.etri.re.kr
   job_title: Research Intern
   dates: July 2020 - August 2020
   quote: >
-    The Electronics and Telecommunications Research Institute (Korean: 한국전자통신연구원; Hanja: 韓國電子通信硏究院) is a Korean government-funded research institution in Daedeok Science Town in Daejeon, Republic of Korea. - Electronics and Telecommunications Research Institute, Wikipedia
+    The Electronics and Telecommunications Research Institute (ETRI) is a Korean government-funded research institution in Daedeok Science Town in Daejeon, Republic of Korea. - Electronics and Telecommunications Research Institute, Wikipedia
   description: | # this will include new lines to allow paragraphs
     I worked as a research intern in Human Robot Interaction Research Section, Artificial Intelligence Research Laboratory, ETRI. I reimplemented [exsiting gaze estimator](https://github.com/swook/GazeML, "GazeML github link") written with Tensorflow into PyTorch. I also developed semi-automatic annotation program, AuTag from scratch with PyQt5. I annotated real-world data with AuTag. I trained and evaluated gaze estimator with both [synthetic data](https://www.cl.cam.ac.uk/research/rainbow/projects/unityeyes, "UnityEyes link") and the real-world data. 
 
 - layout: left
-  company: Republic of Korea Army(ROKA)
+  company: Republic of Korea Army
   link: www.army.mil.kr
-  job_title: Sergeant (KATUSA)
+  job_title: Sergeant
   dates: August 2016 - April 2018
   quote: >
-    Korean Augmentation To the United States Army (KATUSA Korean: 카투사) is a branch of the Republic of Korea Army that consists of Korean drafted personnel who are augmented to the Eighth United States Army (EUSA). KATUSA members are dispatched throughout the most of the Eighth United States Army departments, filling in positions for the United States Army enlisted soldiers and junior non-commissioned officers.
+    Korean Augmentation To the United States Army (KATUSA) is a branch of the Republic of Korea Army that consists of Korean drafted personnel who are augmented to the Eighth United States Army. KATUSA members are dispatched throughout the most of the Eighth United States Army departments, filling in positions for the United States Army enlisted soldiers and junior non-commissioned officers.
   description: | # this will include new lines to allow paragraphs
-    I served in the ROKA for 21 months as a KATUSA soldier(Military Occupational Specialty: 25B Information technology specialists). I worked with the US Army and polished my English communication skill. I did my best to be the exemplary soldier.
+    I served in the ROKA for 21 months as a KATUSA soldier (Military Occupational Specialty: 25B Information technology specialists). I worked with the US Army and polished a variety of job skills, especially my English communication skill. I did my best to be the exemplary soldier. I have won the Best Warrior Competetion in our battalion.
