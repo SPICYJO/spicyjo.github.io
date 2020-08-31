@@ -6,7 +6,7 @@
   quote: >
     The Electronics and Telecommunications Research Institute (ETRI) is a Korean government-funded research institution in Daedeok Science Town in Daejeon, Republic of Korea. - Electronics and Telecommunications Research Institute, Wikipedia
   description: | # this will include new lines to allow paragraphs
-    I worked as a research intern in Human Robot Interaction Research Section, Artificial Intelligence Research Laboratory, ETRI. I reimplemented [exsiting gaze estimator](https://github.com/swook/GazeML, "GazeML github link") written with Tensorflow into PyTorch. I also developed semi-automatic annotation program, AuTag from scratch with PyQt5. I annotated real-world data with AuTag. I trained and evaluated gaze estimator with both [synthetic data](https://www.cl.cam.ac.uk/research/rainbow/projects/unityeyes, "UnityEyes link") and the real-world data. 
+    I worked as a research intern in Human Robot Interaction Research Section, Artificial Intelligence Research Laboratory, ETRI. I reimplemented [exsiting gaze estimator](https://github.com/swook/GazeML "GazeML github link") written with Tensorflow in PyTorch. I also developed semi-automatic annotation program, AuTag from scratch with PyQt5. I annotated real-world data with AuTag. I trained and evaluated gaze estimator with both [synthetic data](https://www.cl.cam.ac.uk/research/rainbow/projects/unityeyes "UnityEyes link") and the real-world data. 
 
 - layout: left
   company: Republic of Korea Army
