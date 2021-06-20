@@ -1,4 +1,14 @@
 - layout: left
+  company: Naver Corporation
+  link: www.navercorp.com/en
+  job_title: Software Developer
+  dates: December 2021 - Current
+  quote: >
+    Naver Corporation is a South Korean mass media and technology conglomerate headquartered in Seongnam that operates the search engine Naver. - Naver Corporation, Wikipedia
+  description: | # this will include new lines to allow paragraphs
+    I am currently working in Naver Corporation as a software developer. Since there are a huge number of people using our service, I am always putting an effort to make the service more scalable. resilient and highly available.
+
+- layout: left
   company: Electronics and Telecommunications Research Institute
   link: www.etri.re.kr
   job_title: Research Intern

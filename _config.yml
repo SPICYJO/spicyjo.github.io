@@ -24,10 +24,11 @@ youtube_username: channel/UCsfJIT6fbpew1fiwiKiZnsA
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I am Seungwoo Jo and about to graduate from Seoul National University, South Korea in February 2021. I currently major in computer science and mechanical engineering. I want to pursue my career in computer science.
+  Hi, I am Seungwoo Jo and I am currently working as a software developer in Naver Corporation.
 
   My current interests are:
-  - Human Behavior and Context Sensing
+  - Software Development
+  - Building Scalable and Resilient system
   - Application of Technology in Business
 
 # I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
@@ -45,9 +46,9 @@ about_content: | # this will include new lines to allow paragraphs
 # skill_title: Skills
 skill_content: | # this will include new lines to allow paragraphs
   <h5>Programming Languages</h5>
-  - C
-  - JAVA
   - Python
+  - JAVA
+  - C
 
   <small>Above languages are my most experienced ones. I have some experience in other languages: C++, Matlab, JavaScript, etc. I like learning new languages such as OCaml. I recently started on learning Rust.</small>
 
@@ -57,7 +58,7 @@ skill_content: | # this will include new lines to allow paragraphs
   <h5>Languages</h5>
    - Korean (Native)
    - English (Fluent)
-   - Japanese (Intermediate)
+   - Japanese (Advanced)
 
 # More Section
 # more_title: A Little More About Me
