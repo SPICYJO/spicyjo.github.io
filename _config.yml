@@ -17,7 +17,7 @@ github_username:  SPICYJO
 # instagram_username: chillwildlife
 # linkedin_username: jameswgrant
 # pinterest_username: jekyll
-youtube_username: channel/UCsfJIT6fbpew1fiwiKiZnsA
+youtube_username: channel%2FUCsfJIT6fbpew1fiwiKiZnsA
 # googleplus_username: +jekyll
 
 # About Section
@@ -47,7 +47,7 @@ about_content: | # this will include new lines to allow paragraphs
 skill_content: | # this will include new lines to allow paragraphs
   <h5>Programming Languages</h5>
   - Python
-  - JAVA
+  - Java
   - C
 
   <small>Above languages are my most experienced ones. I have some experience in other languages: C++, Matlab, JavaScript, etc. I like learning new languages such as OCaml. I recently started on learning Rust.</small>
@@ -58,7 +58,7 @@ skill_content: | # this will include new lines to allow paragraphs
   <h5>Languages</h5>
    - Korean (Native)
    - English (Fluent)
-   - Japanese (Advanced)
+   - Japanese (Fluent)
 
 # More Section
 # more_title: A Little More About Me
