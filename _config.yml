@@ -17,11 +17,11 @@ github_username:  SPICYJO
 # instagram_username: chillwildlife
 # linkedin_username: jameswgrant
 # pinterest_username: jekyll
-youtube_username: channel%2FUCsfJIT6fbpew1fiwiKiZnsA
+# youtube_username: channel/FUCsfJIT6fbpew1fiwiKiZnsA
 # googleplus_username: +jekyll
 
 # About Section
-# about_title: About Me
+about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, I am Seungwoo Jo and I am currently working as a software developer in Naver Corporation.
@@ -59,6 +59,11 @@ skill_content: | # this will include new lines to allow paragraphs
    - Korean (Native)
    - English (Fluent)
    - Japanese (Fluent)
+
+# Schedule Section
+schedule_title: Schedule
+schedule_content: |
+  <iframe src="https://calendar.google.com/calendar/embed?src=sjosjo1204%40gmail.com&ctz=Asia%2FSeoul" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 # More Section
 # more_title: A Little More About Me
