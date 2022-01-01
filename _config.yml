@@ -12,3 +12,5 @@ google_analytics: G-TD9DYT9X81
 
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
