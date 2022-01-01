@@ -1,8 +1,10 @@
 source "https://rubygems.org"
 
-gem 'monophase'
-gem 'github-pages'
+gem "jekyll", "= 3.9.0"
 
 group :jekyll_plugins do
-  gem 'jekyll-sitemap'
+  gem "jekyll-feed", "~> 0.12"
 end
+
+gem "monophase"
+gem "github-pages", "~> 222", group: :jekyll_plugins
