@@ -12,5 +12,3 @@ categories_path: /categories/
 disqus: spicyjo
 google_analytics: G-TD9DYT9X81
 
-plugins:
-  - jekyll-sitemap
