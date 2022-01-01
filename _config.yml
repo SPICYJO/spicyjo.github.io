@@ -1,0 +1,16 @@
+theme: monophase
+
+title: SPICYJO's Tech Blog
+tagline: Never too old to learn, never too young to teach
+lang: en
+author:
+  name: Seungwoo Jo
+  url: https://www.linkedin.com/in/seungwoo-jo-7b98bb202/
+tags_path: /tags/
+categories_path: /categories/
+
+disqus: spicyjo
+google_analytics: G-TD9DYT9X81
+
+plugins:
+  - jekyll-sitemap
