@@ -4,7 +4,7 @@ title: Hello, blog!
 description: Yey! I started my first tech blog.
 author: Seungwoo Jo
 # last_modified_at: 2022-01-01 00:00:00 +0900
-# math: false
+math: true
 tags: thoughts
 category: thoughts
 comments: true
@@ -19,3 +19,20 @@ I think everyone has difficult time when they try something new. And that's the 
 If you have any question, comment or discussion, **please feel free to leave a comment**. I also like this quote: `"There are no stupid questions."`
 
 Yey! I finished my first post. See you later.
+
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+
+$$
+\require{enclose}
+\begin{array}{r}
+              13  \\[-3pt]
+4 \enclose{longdiv}{52} \\[-3pt]
+   \underline{4}\phantom{2} \\[-3pt]
+              12  \\[-3pt]
+   \underline{12}
+\end{array}
+$$
+
+
+$$\begin{pmatrix}a & b\\\ c & d\end{pmatrix}$$
