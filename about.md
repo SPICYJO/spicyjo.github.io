@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /about/
 ---
 <!--
 ![profile](assets/images/profile.jpg)
