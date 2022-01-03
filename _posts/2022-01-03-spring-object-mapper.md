@@ -32,15 +32,15 @@ Let's look into what these features do in simple test code. If you want to get t
 @Slf4j
 @SpringBootTest
 class ObjectMapperTest {
-	@Autowired
-	ObjectMapper springObjectMapper; // Spring Boot auto-configured ObjectMapper
+    @Autowired
+    ObjectMapper springObjectMapper; // Spring Boot auto-configured ObjectMapper
 
-	ObjectMapper jacksonObjectMapper = new ObjectMapper(); // Jackson default ObjectMapper
+    ObjectMapper jacksonObjectMapper = new ObjectMapper(); // Jackson default ObjectMapper
     
     @BeforeEach
-	void setup() {
-		jacksonObjectMapper = new ObjectMapper();
-	}
+    void setup() {
+        jacksonObjectMapper = new ObjectMapper();
+    }
     
     /* ... */
 }
