@@ -16,7 +16,7 @@ As you know, Spring Boot configures a lot of things for us. They register lots o
 
 I think many developers would not pay much attention to serializer and deserializer, because Spring Boot's default configuration works great for most of cases. When we return object (e.g. `Person` object) from `@RestController` controller, `ObjectMapper` serialize the object into Json format behind the scene. `ObjectMapper` also deserialize a Json request body into an object.
 
-But when we use Spring Boot, our `ObjectMapper` is little different from Jackson's default one, which is created by `new ObjectMapper()`. Spring Boot's auto-configured `ObjectMapper` has following differences from `new ObjectMapper()`. 
+When we use Spring Boot, our `ObjectMapper` is little different from Jackson's default one, which is created by `new ObjectMapper()`. Spring Boot's auto-configured `ObjectMapper` has following differences from `new ObjectMapper()`. 
 
 ### Spring Boot's auto-configured ObjectMapper
 - `SerializationFeature.WRITE_DATES_AS_TIMESTAMPS` is set to `false`
