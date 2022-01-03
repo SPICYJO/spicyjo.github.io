@@ -1,9 +1,9 @@
 ---
 layout: post
-title: ObjectMapper default configuration in Spring Boot
-description: Let's take a look at default configuration of ObjectMapper in Spring Boot
+title: Spring Boot's auto-configuration of ObjectMapper
+description: Let's take a look at auto-configuration of ObjectMapper in Spring Boot
 author: Seungwoo Jo
-# last_modified_at: 2022-01-01 00:00:00 +0900
+last_modified_at: 2022-01-03 22:53:00 +0900
 # math: false
 tags: Spring Java Jackson
 category: Spring
@@ -18,6 +18,7 @@ I think many developers would not pay much attention to serializer and deseriali
 
 But when we use Spring Boot, our `ObjectMapper` is little different from Jackson's default one, which is created by `new ObjectMapper()`. Spring Boot's auto-configured `ObjectMapper` has following differences from `new ObjectMapper()`. 
 
+### Spring Boot's auto-configured ObjectMapper
 - `SerializationFeature.WRITE_DATES_AS_TIMESTAMPS` is set to `false`
 - `SerializationFeature.WRITE_DURATIONS_AS_TIMESTAMPS` is set to `false`
 - `DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES` is set to `false`
