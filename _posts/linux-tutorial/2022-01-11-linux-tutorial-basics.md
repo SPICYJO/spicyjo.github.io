@@ -1,7 +1,7 @@
 ---
 layout: post
-title: dd
-description: Let's take a look at auto-configuration of ObjectMapper in Spring Boot
+title: Linux Tutorial (1) - Basics
+description: Basic commands you have to know when working with linux shell
 author: Seungwoo Jo
 # last_modified_at: 2022-01-03 22:53:00 +0900
 # math: false
@@ -10,139 +10,267 @@ category: Linux Tutorial
 comments: true
 ---
 
-## Spring Boot's auto-configured ObjectMapper
+## About this tutorial
 
-As you know, Spring Boot configures a lot of things for us. They register lots of Beans on behalf of us. Sometimes, we might think that there is no configuration at all in the first place.
+Hello, guys! I am going to upload a series of tutorials of linux commands that can help you to grab an idea of how to use linux through a terminal(a.k.a. CLI). If you work in software field, I think you are quite familiar with these commands. In that case I would recommend you to skip familiar commands and jump to the commands you are interested in, because I am going to talk about lots of basic stuffs. If you are a beginner in software field, learning how to use a terminal is probably going to be very helpful for your future. And it also looks cool with all that fancy looking terminal screen, so why not try learning?
 
-I think many developers would not pay much attention to serializer and deserializer, because Spring Boot's default configuration works great for most of cases. When we return object (e.g. `Person` object) from `@RestController` controller, `ObjectMapper` serialize the object into Json format behind the scene. `ObjectMapper` also deserialize a Json request body into an object.
+These are topics that I am going to talk about in this series.
+- Linux commands (e.g. `ls`, `cd`, `mv`, etc.)
+- Linux shells and shellscript
+- Linux basic knowledges with a shallow look (e.g. `process`, `pid`, `user`, `group` ...)
 
-When we use Spring Boot, our `ObjectMapper` is little different from Jackson's default one, which is created by `new ObjectMapper()`. Spring Boot's auto-configured `ObjectMapper` has following differences from `new ObjectMapper()`. 
+And the followings are not going to be covered in this series.
+- Mechanisms how linux works
+- Deep dive into linux kernels
+- How to make a flying car
 
-### Spring Boot's auto-configured ObjectMapper
-- `SerializationFeature.WRITE_DATES_AS_TIMESTAMPS` is set to `false`
-- `SerializationFeature.WRITE_DURATIONS_AS_TIMESTAMPS` is set to `false`
-- `DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES` is set to `false`
-- `MapperFeature.DEFAULT_VIEW_INCLUSION` is set to `false`
+Before you continue on, make sure that you have linux environment to try commands in the series.
+- If you are using Mac, you can simply use the existing terminal.
+- If you are using Linux, you can also just use the existing terminal.
+- If you are using Windows, you can install WSL or Linux on your machine. Or you can connect to another linux environment via SSH.
 
+## Overview
+In this tutorial, I am going to talk about following basic commands.
+- How to use shell?
+- `ls`
+- `cd`
+- `pwd`
+- `man`
+- `cat`
+- `mv`
+- `cp`
+- `rm`
+- `touch`
+- `rmdir`
+- `clear`
 
-Let's look into what these features do in simple test code. If you want to get test code, you can find it on my github. https://github.com/SPICYJO/blog-demo-1
+## Basic linux commands
+#### How to use shell?
+If it is your first time opening up a terminal, you probably feel kind of lost. But there is nothing to worry about. Using a terminal is very simple.
 
-## Test Class
-```java
-@Slf4j
-@SpringBootTest
-class ObjectMapperTest {
-    @Autowired
-    ObjectMapper springObjectMapper; // Spring Boot auto-configured ObjectMapper
-
-    ObjectMapper jacksonObjectMapper = new ObjectMapper(); // Jackson default ObjectMapper
-    
-    @BeforeEach
-    void setup() {
-        jacksonObjectMapper = new ObjectMapper();
-    }
-    
-    /* ... */
-}
+```bash
+[spicyjo@spicyhost-spicydomain ~]$
 ```
 
-Our test code looks like above. ObjectMapper `springObjectMapper` is autowired from Spring Boot auto-configured Bean and `jacksonObjectMapper` is contructed with `new ObjectMapper()` constructor.
+Your terminal would look like above. It indicates your username, hostname and current directory. And the `$` sign means that you are going to make tons of money. I was just kidding. `$` sign means that you are logged in as a normal user. If you are logged in as a superuser, `#` sign will be displayed. 
 
-## WRITE_DATES_AS_TIMESTAMPS and WRITE_DURATIONS_AS_TIMESTAMPS
+You can type whatever command you want your computer to execute. Terminal is waiting for your command. You have to type right command so that your computer understands you. If you type a non-existing command, it will say something like below.
 
-```java
-@Test
-void test_WRITE_DATES_AS_TIMESTAMPS_WRITE_DURATIONS_AS_TIMESTAMPS() throws JsonProcessingException {
-    String springSerialized = springObjectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(
-        new TimeClass(1, new Date(), Instant.now(), Duration.ofMinutes(10L))
-    );
-    log.info(springSerialized);
-    //{
-    //  "id" : 1,
-    //  "date" : "2022-01-03T12:52:11.802+00:00",
-    //  "instant" : "2022-01-03T12:52:11.802831Z",
-    //  "duration" : "PT10M"
-    //}
-    jacksonObjectMapper.registerModule(new JavaTimeModule()); // For serialization of Instant, Duration
-    String jacksonSerialized = jacksonObjectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(
-        new TimeClass(1, new Date(), Instant.now(), Duration.ofMinutes(10L))
-    );
-    log.info(jacksonSerialized);
-    //{
-    //  "id" : 1,
-    //  "date" : 1641214331840,
-    //  "instant" : 1641214331.840827200,
-    //  "duration" : 600.000000000
-    //}
-}
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ showmethemoney
+bash: showmethemoney: command not found...
+[spicyjo@spicyhost-spicydomain ~]$
 ```
 
-You can see that Spring Boot's auto-configured ObjectMapper returned `yyyy-MM-dd'T'HH:mm:ss.SSS` format for `Date` and `Instant` class while Jackson's default mapper returned [unix time](https://en.wikipedia.org/wiki/Unix_time). You can also notice that `Duration` class is formatted in [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) duration format.
+Your shell will try to execute the command you typed then it will return back to the standby state. Let's type pwd(with Enter).
 
-## FAIL_ON_UNKNOWN_PROPERTIES
-
-```java
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
-public static class Person {
-    private Integer id;
-    private String name;
-}
-@Test
-void test_FAIL_ON_UNKNOWN_PROPERTIES() throws JsonProcessingException {
-    String jsonString = "{\"id\": 42, \"name\": \"John Doe\", \"salary\": 123456}";
-    Person springDeserialized = springObjectMapper.readValue(jsonString, Person.class);
-    log.info(springDeserialized.toString());
-    // ObjectMapperTest.Person(id=42, name=John Doe)
-
-    Person jacksonDeserialized = jacksonObjectMapper.readValue(jsonString, Person.class);
-    // above statement throws UnrecognizedPropertyException
-    //com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "salary" (class com.example.demo.ObjectMapperTest$Person), not marked as ignorable (2 known properties: "id", "name"])
-    // at [Source: (String)"{"id": 42, "name": "John Doe", "salary": 123456}"; line: 1, column: 48] (through reference chain: com.example.demo.ObjectMapperTest$Person["salary"])
-    log.info(jacksonDeserialized.toString());
-}
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ pwd
+/home/spicyjo
+[spicyjo@spicyhost-spicydomain ~]$
 ```
 
-You can see that Jackson's default mapper throws exception because there was unknown property `salary` in the string. 
+Yeah! We executed our first command. `pwd` shows the current working directory. So this is how you use your terminal. Let's try more commands.
 
-## DEFAULT_VIEW_INCLUSION
-```java
-public static class Views {
-    public static class Public {
-    }
-    public static class Internal {
-    }
-}
-
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
-public static class Person2 {
-    @JsonView({Views.Internal.class})
-    private Integer id;
-    @JsonView({Views.Public.class, Views.Internal.class})
-    private String name;
-
-    private String middleName;
-}
-
-@Test
-void test_DEFAULT_VIEW_INCLUSION() throws JsonProcessingException, IOException {
-    Person2 p = new Person2(42, "John Doe", "Middle");
-    String springSerialized = springObjectMapper.writerWithView(Views.Public.class).writeValueAsString(p);
-    String jacksonSerialized = jacksonObjectMapper.writerWithView(Views.Public.class).writeValueAsString(p);
-    log.info(springSerialized); // {"name":"John Doe"}
-    log.info(jacksonSerialized); // {"name":"John Doe","middleName":"Middle"}
-
-    Person2 sp = springObjectMapper.readerWithView(Views.Public.class).readValue("{\"name\":\"John Doe\",\"middleName\":\"Middle\"}", Person2.class);
-    Person2 jp = jacksonObjectMapper.readerWithView(Views.Public.class).readValue("{\"name\":\"John Doe\",\"middleName\":\"Middle\"}", Person2.class);
-    log.info(sp.toString()); // ObjectMapperTest.Person2(id=null, name=John Doe, middleName=null)
-    log.info(jp.toString()); // ObjectMapperTest.Person2(id=null, name=John Doe, middleName=Middle)
-}
+#### ls
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ ls
+todo.txt
+[spicyjo@spicyhost-spicydomain ~]$
 ```
 
-You can see that `middleName` property which has no `@JsonView` annotation is excluded in Spring Boot's auto-configured mapper becuase `MapperFeature.DEFAULT_VIEW_INCLUSION` is set to `false`. 
+`ls` list files and directory of the current working directory. You can also try it with options.
+
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ ls -a
+.  ..  .bash_logout  .bash_profile  .bashrc  .config  .esd_auth  .mozilla  .viminfo  todo.txt
+[spicyjo@spicyhost-spicydomain ~]$ ls -l
+total 4
+-rw-rw-r--. 1 spicyjo spicyjo 5 Jan 11 10:12 todo.txt
+[spicyjo@spicyhost-spicydomain ~]$
+```
+
+You can also type `ls -al` to combine options. There are lots of options, but I think `-a`, `-l` would be enough for now. If you want to figure out more available options, you can use `man` command which is going to be discussed below.
+
+- `-a`: list all including hidden files or directories (files or directories starting with `.` is considered as hidden)
+- `-l`: display each entry in a single line
+
+#### cd
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ ls -a
+.  ..  .bash_logout  .bash_profile  .bashrc  .config  .esd_auth  .mozilla  .viminfo  todo.txt
+[spicyjo@spicyhost-spicydomain ~]$ cd ..
+[spicyjo@spicyhost-spicydomain home]$ ls
+spicyjo  xyzman
+[spicyjo@spicyhost-spicydomain home]$ ls -a
+.  ..  spicyjo  xyzman
+[spicyjo@spicyhost-spicydomain home]$ cd spicyjo/
+[spicyjo@spicyhost-spicydomain ~]$ ls
+```
+
+`cd` changes your directory. `.` means current directory, and `..` means parent directory. `~` means home directory for the current user, `/home/spicyjo` in my case. `/` is the root directory. And another useful thing to know is that `-` means the previous directory.
+
+#### pwd
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ pwd
+/home/spicyjo
+[spicyjo@spicyhost-spicydomain ~]$
+```
+
+`pwd` prints current working directory.
+
+#### man
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ man pwd
+PWD(1)                                   User Commands                                  PWD(1)
+
+NAME
+       pwd - print name of current/working directory
+
+SYNOPSIS
+       pwd [OPTION]...
+
+DESCRIPTION
+       Print the full filename of the current working directory.
+
+       -L, --logical
+              use PWD from environment, even if it contains symlinks
+
+(...omitted)
+```
+
+`man` shows the manual for command. If you want to see a manual of `pwd` command, you can type `man pwd`. If it is your first time using this command, it could be hard to get out of that man page. You can press `q` to quit and `h` for help. `man` command is really helpful, so keep this in your mind. As an alternative, you can also use `--help` options for most of commands.
+
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ pwd --help
+pwd: pwd [-LP]
+    Print the name of the current working directory.
+
+    Options:
+      -L        print the value of $PWD if it names the current working
+                directory
+      -P        print the physical directory, without any symbolic links
+
+    By default, `pwd' behaves as if `-L' were specified.
+```
+
+#### cat
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ cat todo.txt
+- Wash dishes
+- Go to gym
+- Write a blog post
+[spicyjo@spicyhost-spicydomain ~]$ cat todo.txt todo.txt
+- Wash dishes
+- Go to gym
+- Write a blog post
+- Wash dishes
+- Go to gym
+- Write a blog post
+[spicyjo@spicyhost-spicydomain ~]$
+```
+
+`cat` command concatenates files and prints on the standard output.
+
+#### mv
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ ls
+todo.txt
+[spicyjo@spicyhost-spicydomain ~]$ mv todo.txt todo2.txt
+[spicyjo@spicyhost-spicydomain ~]$ ls
+todo2.txt
+[spicyjo@spicyhost-spicydomain ~]$
+```
+
+`mv` command moves file or directory. (directory is regarded as file in linux system) You can change the file's name or path.
+
+#### cp
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ ls
+todo2.txt
+[spicyjo@spicyhost-spicydomain ~]$ cp todo2.txt newtodo.txt
+[spicyjo@spicyhost-spicydomain ~]$ ls
+newtodo.txt  todo2.txt
+[spicyjo@spicyhost-spicydomain ~]$
+```
+
+`cp` command copies file.
+
+#### rm
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ ls
+newtodo.txt  todo2.txt
+[spicyjo@spicyhost-spicydomain ~]$ rm todo2.txt
+[spicyjo@spicyhost-spicydomain ~]$ ls
+newtodo.txt
+[spicyjo@spicyhost-spicydomain ~]$
+```
+
+`rm` command removes file.
+
+#### touch
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ ls
+newtodo.txt
+[spicyjo@spicyhost-spicydomain ~]$ touch test.txt
+[spicyjo@spicyhost-spicydomain ~]$ ls
+newtodo.txt  test.txt
+[spicyjo@spicyhost-spicydomain ~]$ ls -l
+total 4
+-rw-rw-r--. 1 spicyjo spicyjo 46 Jan 13 10:29 newtodo.txt
+-rw-rw-r--. 1 spicyjo spicyjo  0 Jan 13 10:31 test.txt
+[spicyjo@spicyhost-spicydomain ~]$ touch test.txt
+[spicyjo@spicyhost-spicydomain ~]$ ls -l
+total 4
+-rw-rw-r--. 1 spicyjo spicyjo 46 Jan 13 10:29 newtodo.txt
+-rw-rw-r--. 1 spicyjo spicyjo  0 Jan 13 10:32 test.txt
+[spicyjo@spicyhost-spicydomain ~]$
+```
+
+`touch` command changes file timestamps and create file if not exist.
+
+#### mkdir
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ ls
+newtodo.txt  test.txt
+[spicyjo@spicyhost-spicydomain ~]$ mkdir tutorial
+[spicyjo@spicyhost-spicydomain ~]$ ls
+newtodo.txt  test.txt  tutorial
+[spicyjo@spicyhost-spicydomain ~]$
+```
+
+`mkdir` command makes directory.
+
+#### rmdir
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ ls
+newtodo.txt  test.txt  tutorial
+[spicyjo@spicyhost-spicydomain ~]$ rmdir tutorial
+[spicyjo@spicyhost-spicydomain ~]$ ls
+newtodo.txt  test.txt
+[spicyjo@spicyhost-spicydomain ~]$
+```
+
+`rmdir` command removes directory.
+
+#### clear
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ clear
+```
+
+`clear` command clears screen output. It is handy when you want to clean up messy output.
 
 ## Wrap up
-In this article, we have seen configuration difference between two `ObjectMapper` from Spring Boot auto-configuration and Jackson default constructor. If you find out more differece, please feel free to leave a comment below. Have a good day!
+In this article, we have learned the following basic commands. Try them on your terminal by yourself so that you can get used to them. I'll see you in the next one. 
+
+- `ls`
+- `cd`
+- `pwd`
+- `man`
+- `cat`
+- `mv`
+- `cp`
+- `rm`
+- `touch`
+- `rmdir`
+- `clear`
