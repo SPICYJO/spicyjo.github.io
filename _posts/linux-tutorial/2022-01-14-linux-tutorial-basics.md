@@ -3,7 +3,7 @@ layout: post
 title: Linux Tutorial (1) - Basics
 description: Basic commands you have to know when working with linux shell
 author: Seungwoo Jo
-# last_modified_at: 2022-01-03 22:53:00 +0900
+last_modified_at: 2022-01-14 22:10:00 +0900
 # math: false
 tags: linux tutorial
 category: Linux Tutorial
@@ -41,7 +41,9 @@ In this tutorial, I am going to talk about following basic commands.
 - `cp`
 - `rm`
 - `touch`
+- `mkdir`
 - `rmdir`
+- `which`
 - `clear`
 
 ## Basic linux commands
@@ -253,6 +255,15 @@ newtodo.txt  test.txt
 
 `rmdir` command removes directory.
 
+#### which
+```bash
+[spicyjo@spicyhost-spicydomain ~]$ which rmdir
+/usr/bin/rmdir
+[spicyjo@spicyhost-spicydomain ~]$
+```
+
+`which` command shows where the command is located at. Each linux command is a program, so basically it is an executable file.
+
 #### clear
 ```bash
 [spicyjo@spicyhost-spicydomain ~]$ clear
@@ -273,4 +284,6 @@ In this article, we have learned the following basic commands. Try them on your 
 - `rm`
 - `touch`
 - `rmdir`
+- `mkdir`
+- `which`
 - `clear`
