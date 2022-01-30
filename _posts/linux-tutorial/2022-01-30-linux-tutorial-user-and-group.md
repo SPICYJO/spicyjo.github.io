@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux Tutorial (3) - User, Group
+title: Linux Tutorial (3) - User and Group
 description: Linux commands to deal with user and group
 author: Seungwoo Jo
 # last_modified_at: 2022-01-14 22:10:00 +0900
