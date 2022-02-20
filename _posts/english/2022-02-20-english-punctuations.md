@@ -80,8 +80,8 @@ This is what I learned about punctuation rules in English. I was quite surprised
 #### References
 I have used the following materials to learn this subject.
 
-- [13 Basic Punctuation Rules in English | Essential Writing Essential Series & Punctuation Guide](https://youtu.be/zVu-XvULZNg)
+- [13 Basic Punctuation Rules in English \| Essential Writing Essential Series & Punctuation Guide](https://youtu.be/zVu-XvULZNg)
 
-- [Dashes | Punctuation | Khan Academy](https://youtu.be/tLmDYzhv6Z0)
+- [Dashes \| Punctuation \| Khan Academy](https://youtu.be/tLmDYzhv6Z0)
 
-- [EN DASH & EM DASH | English grammar | How to use punctuation correctly](https://www.youtube.com/watch?v=JiQVQVIiohc)
+- [EN DASH & EM DASH \| English grammar \| How to use punctuation correctly](https://www.youtube.com/watch?v=JiQVQVIiohc)
