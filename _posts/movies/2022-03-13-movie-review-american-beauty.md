@@ -36,7 +36,7 @@ Lester's narration ends the movie. "Sometimes I feel like I'm seeing it all at o
 
 I really liked the plot and scenes of the movie. In the beginning, Lester looks like he is imprisoned in the monitor of his office. His fantasy is depicted with roses and I really liked the illustration. Sound and light was well coordinated as if someone is having crush.
 
-![Lester depicted as a prisoner inside a monitor](assets/american-beauty-jail-cell.png)
+![Lester depicted as a prisoner inside a monitor](/assets/images/american-beauty-jail-cell.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 I think this movie is well-made one. There are so many things to think about in this movie.
 
