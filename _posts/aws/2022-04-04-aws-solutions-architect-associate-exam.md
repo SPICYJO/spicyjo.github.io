@@ -20,9 +20,9 @@ Today, I took an AWS Certified Solutions Architect - Associate (SAA-C02) exam an
 - Benefits after passing the exam
 
 ## My Background & My Study Period
-I have been working as a software engineer in South Korea. In my company, we have our own solutions and data centers so I don't use AWS for my work. But still, I found that my experience at work helped me a lot while studying for the exam. Because most software engineers face the common issues (high availability, database, tight coupling etc), and we have common solutions for those issues (L4 loadbalancer, MySQL, Kafka etc). And what AWS provides are also the solutions for those common issues (Elastic Load Balancer, Amazon RDS, SQS). In that sense, my work experience helped me a lot.
+**I have been working as a software engineer** in South Korea. In my company, we have our own solutions and data centers so I don't use AWS for my work. But still, I found that my experience at work helped me a lot while studying for the exam. Because most software engineers face the common issues (high availability, database, tight coupling etc), and we have common solutions for those issues (L4 loadbalancer, MySQL, Kafka etc). And **what AWS provides are also the solutions for those common issues** (Elastic Load Balancer, Amazon RDS, SQS). In that sense, my work experience helped me a lot.
 
-After my work hour, I sometimes work on my side project on AWS as my hobby. And my experience on AWS is about 1 year for now. I was the AWS services but I did not have a firm understanding of AWS system. Most of time I had to go through a lot of trial-and-error which were pretty time-consuming for my side project. So I decided to take the exam so that I can have more understanding of AWS system and preparing for the exam actually helped a lot for me (especially, I have learned a lot about IAM and VPC). For me, spending some money for exam registration acted as a booster and that made me study harder than I would if I didn't register the exam.
+In my free time, I sometimes work on my side project on AWS as my hobby. My experience with AWS is about 1 year for now. I was using the AWS services but I did not have a firm understanding of AWS system. Most of time I had to go through a lot of trial-and-error which were pretty time-consuming for my side project. So **I decided to take the exam so that I can have a firm understanding of AWS system** and preparing for the exam actually helped a lot for me (especially, I have learned a lot about IAM and VPC). For me, spending some money for exam registration acted as a booster and that made me study harder than I would if I didn't register the exam.
 
 I planned my study plan to be 2~3 weeks. I have to work on weekdays so I used my evening time to study. I used AWS skill builder course, Youtube videos, and AWS documentations as my study material. In the day before the exam day, I went through the questions from exam dumps. When I met unfamiliar topic while studying, I tried to understand the topic by reading documentations or watching related youtube video.
 
@@ -34,7 +34,9 @@ I scored 804 in the exam. The pass/fail result was available immediately after t
 
 Three are three levels of certifications: Foundational, Associate, and Professional.
 Foundational, Associate, and Professional cost 100 USD, 150 USD, and 300 USD, respectively.
+
 I skipped the Cloud Practitioner certification because I wanted to save my day. Since there was no exam available on weekend(at least in test centers where I live nearby), I had to take a day off to take the exam.
+
 If you pass any of the exams above, they provide a **50% discount voucher** for another exam which can be used for any of the exams above. So I took the Solutions Architect Associate exam first. Because the cost would be same if I took the exam in order of Associate -> Professional (150 + 300 * 0.5), or just only Professional (300). It takes more time, but still it seems to be a safer way to get a Professional certificate.
 
 Outline of Solutions Architect Associate exam
@@ -52,7 +54,7 @@ Outline of Solutions Architect Associate exam
 
 My native language is Korean. AWS Certification offers test in Korean. But I took the exam in English because it is much harder for me to understand the translated terminology.
 
-AWS Certification offers 30 minute extension for non native speakers if you request. I didn't request more time because I had to make a phone call to a foregin number. For me, time was enough despite my English reading speed is slower than native speakers. But this information could be helpful to those who need more time.
+AWS Certification **offers 30 minute extension for non native speakers if you request in advance**. I didn't request more time because I had to make a phone call to a foregin number. For me, time was enough despite my English reading speed is slower than native speakers. But this information could be helpful to those who need more time.
 
 It also helped me a lot to eliminate the wrong answers during the exam since there are a lot of text to process in each question. 
 
