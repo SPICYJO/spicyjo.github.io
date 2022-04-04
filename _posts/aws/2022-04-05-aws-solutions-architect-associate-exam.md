@@ -1,7 +1,7 @@
 ---
 layout: post
-title: I passed AWS Certified Solutions Architect Associate exam! 
-description: I passed AWS Certified Solutions Architect Associate exam today. I am going to share some information about the exam and my study tips.
+title: Passed AWS Certified Solutions Architect Associate exam! 
+description: I took AWS Certified Solutions Architect Associate exam today. I am going to share some information about the exam and my study tips.
 author: Seungwoo Jo
 # last_modified_at: 2022-01-01 00:00:00 +0900
 # math: false
