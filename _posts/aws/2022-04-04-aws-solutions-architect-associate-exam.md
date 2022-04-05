@@ -65,9 +65,10 @@ It also helped me a lot to eliminate the wrong answers during the exam since the
 
 ## Study Materials
 I used the following materials to study. I didn't have a firm understanding about VPC and IAM before I prepare for the exam. Fortunately, there were a lot of excellent videos explaining those topics, which helped me learn a lot. 
-- [AWS VPC Beginner to Pro - Virtual Private Cloud Tutorial](https://www.youtube.com/watch?v=g2JOHLHh4rI)
-- [AWS IAM Tutorial \| AWS Identity And Access Management \| AWS Tutorial For Beginners \| Simplilearn](https://www.youtube.com/watch?v=GjVFf83dcE8)
-- [Architect Learning Plan](https://explore.skillbuilder.aws/learn/public/learning_plan/view/78/architect-learning-plan)
+- [Youtube: AWS VPC Beginner to Pro - Virtual Private Cloud Tutorial](https://www.youtube.com/watch?v=g2JOHLHh4rI)
+- [Youtube: AWS IAM Tutorial \| AWS Identity And Access Management \| AWS Tutorial For Beginners \| Simplilearn](https://www.youtube.com/watch?v=GjVFf83dcE8)
+- [Youtube: Top 50+ AWS Services Explained in 10 Minutes](https://www.youtube.com/watch?v=JIbIYCM48to)
+- [AWS skill builder: Architect Learning Plan](https://explore.skillbuilder.aws/learn/public/learning_plan/view/78/architect-learning-plan)
   - "Exam Readiness: AWS Certified Solutions Architect – Associate (Digital)" helped a lot.
 - [Exam dumps](https://www.freecram.net/exam/SAA-C02-amazon-aws-certified-solutions-architect-associate-saa-c02-exam-e11544.html)
 
