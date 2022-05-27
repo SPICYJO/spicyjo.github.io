@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Opportunity by John James Ingalls
+title: "Poem Reivew: Opportunity by John James Ingalls"
 description: Impressive English poem I read today
 author: Seungwoo Jo
 # last_modified_at: 2022-05-20 23:00:00 +0900
