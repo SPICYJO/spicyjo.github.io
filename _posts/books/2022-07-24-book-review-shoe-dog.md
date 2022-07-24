@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Book Review: Shoe Dog"
+title: "Book Review: Shoe Dog by Phil Knights"
 description: Amazing story book about entrepreneurship, adventure, and business
 author: Seungwoo Jo
 # last_modified_at: 2022-01-01 00:00:00 +0900
