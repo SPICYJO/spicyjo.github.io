@@ -12,7 +12,7 @@ comments: true
 
 I just finished reading Animal Farm written by George Orwell the day before yesterday. I have already read this book years ago in Korean which is my first language and I decided to read it again in English because reading original version would be also fun.
 
-The book was a fable criticizing human society, especially politics, socialism, capitalism, totalitarianism, and dictatorship. It's said that each character and event represents historical figure or social class and historical event. After reading the book, I also searched for historical knowledge of Russia and Soviet Union to get some sense of the underlying allegory in the story.
+The book was a fable criticizing human society, especially politics, communism, capitalism, totalitarianism, and dictatorship. It's said that each character and event represents historical figure or social class and historical event. After reading the book, I also searched for historical knowledge of Russia and Soviet Union to get some sense of the underlying allegory in the story.
 
 ## Plot
 
@@ -41,10 +41,10 @@ In the end, pigs and humans were indiscernible by animals' eyes.
 It is said that each character represents the following historical figure and social class.
 
 - Jones: Czar Nicholas the Second
-- Animalism: Socialism
-- Old Major: Karl Marx and Vladimir Lenin. They are well known for establishing the theory of socialism
-- Snowball: Leon Trotsky. He supported idea of world revolution of socialists. He was banished by Stalin.
-- Napoleon: Joseph Stalin. He supported idea of revolution of socialists within a localized region. He dictated Soviet Union.
+- Animalism: Communism
+- Old Major: Karl Marx and Vladimir Lenin. They are well known for establishing the theory of communism
+- Snowball: Leon Trotsky. He supported idea of world revolution of communists. He was banished by Stalin.
+- Napoleon: Joseph Stalin. He supported idea of revolution of communists within a localized region. He dictated Soviet Union.
 - Guard dogs: KGB, security agency for the Soviet Union
 - Boxer and lots of animals: Proletariat
 - Benjamin: Mensheviks or the author himself.
