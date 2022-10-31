@@ -14,9 +14,9 @@ I have finished reading the first story of Harry Potter series. I have read it a
 
 ## Plot
 
-Harry Potter lost both of his parents when he was just a little baby. Evil wizard, Voldemort murdered his parents but strangely he failed to get rid of Harry. After that, Harry was raised by his aunt Petunia and uncle Vernon Dursley. He often was mistreated by Dursleys. Their kid, Dudley pinched and prodded Harry everyday. Harry hasn't received any present whatsoever in his life. One day, invitation from wizard school Hogwart changed his entire life.
+Harry Potter lost both of his parents when he was just a little baby. Evil wizard, Voldemort murdered his parents but strangely he failed to get rid of Harry. After that, Harry was raised by his aunt Petunia and uncle Vernon Dursley. He often was mistreated by Dursleys. Their kid, Dudley pinched and prodded Harry everyday. Harry hasn't received any present whatsoever in his life. One day, invitation from wizard school Hogwarts changed his entire life.
 
-He went to Hogwart and made friends. He also found his knack for flying a broomstick and won a Quidditch match. He also fended off Voldemort from the Sorcerer's stone which give a person an endless life. Voldemort has retreated and the semester in Hogwart ended. Harry returned to Dursley's house in vacation. He had wonderful time in Hogwart.
+He went to Hogwarts and made friends. He also found his knack for flying a broomstick and won a Quidditch match. He also fended off Voldemort from the Sorcerer's stone which give a person an endless life. Voldemort has retreated and the semester in Hogwarts ended. Harry returned to Dursley's house in vacation. He had wonderful time in Hogwarts.
 
 ## Conclusion
 
