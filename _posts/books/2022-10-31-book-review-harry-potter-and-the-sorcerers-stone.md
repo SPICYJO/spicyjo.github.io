@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Book Review: Harry Potter and the Sorcerer's stone by J. K. Rowling"
+title: "Book Review: Harry Potter and the Sorcerer's Stone by J. K. Rowling"
 description: Fun story to read
 author: Seungwoo Jo
 # last_modified_at: 2022-01-01 00:00:00 +0900
